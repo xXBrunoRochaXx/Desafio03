@@ -1,0 +1,50 @@
+#app{
+  display: grid;
+  grid-template-columns: 36% 64%;
+
+  height: 100vh;
+  overflow: hidden; /*Isso faz com que ele não tenha rolagem nos dois lados, no entanto resolucionaremos isso na tag main colocando rolagem diretamente nela*/
+}
+
+main{
+  overflow: auto;/*Aqui eu adiciono a rolagem */
+
+  
+}
+
+aside{
+  padding: 2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/assets/Background.png);
+  border: 1px solid red;
+}
+
+#app {
+  aside{
+
+
+    .aside-container{
+
+      img{
+        height: 3rem;
+        width: 2.5rem;
+        padding-left: 0.3rem;
+        margin-bottom: 1rem;
+      }
+
+      h2{
+        font: var(--logo);
+        color: var(--pink);
+      }
+
+      p{
+        font: var(--body-Xs-regular);
+        color: var(--text-heading);
+        margin-top: 0.25rem;
+      }
+    } 
+    
+
+  }
+}

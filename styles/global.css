@@ -1,3 +1,9 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
 :root{
    --brand-light: #59B2FF;
    --brand-mid: #3487CF;
@@ -34,17 +40,22 @@
 
     /*Tipografia*/
      --font-family-lck: 'Leckerli One', sans-serif ; 
-     --logo: 400 40px/auto var(--font-family-lck);
+     --logo: 400 40px var(--font-family-lck);
 
      --font-family-baloo: 'Baloo 2', sans-serif;
-     --headig-Md: 800 28px/auto var(--font-family-baloo);
-     --heading-Sm: 800 18px/auto var(--font-family-baloo);
+     --headig-Md: 800 28px var(--font-family-baloo);
+     --heading-Sm: 800 18px var(--font-family-baloo);
 
      --font-family-open: 'Open Sans', sans-serif;
-     --body-Md-semibold: 600 16px/auto var(--font-family-open);
-     --body-Md-regular: 400 16px/auto var(--font-family-open);
-     --body-Sm-semibold: 600 14px/auto var(--font-family-open);
-     --body-Sm-regular: 400 14px/auto var(--font-family-open);
-     --body-Xs-semibold: 600 12px/auto var(--font-family-open);
-     --body-Xs-regular: 400 12px/auto var(--font-family-open);
+     --body-Md-semibold: 600 16px var(--font-family-open);
+     --body-Md-regular: 400 16px var(--font-family-open);
+     --body-Sm-semibold: 600 14px var(--font-family-open);
+     --body-Sm-regular: 400 14px var(--font-family-open);
+     --body-Xs-semibold: 600 12px var(--font-family-open);
+     --body-Xs-regular: 400 12px var(--font-family-open);
 }
+
+body{
+   overflow: hidden;
+}
+

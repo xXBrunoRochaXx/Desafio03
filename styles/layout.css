@@ -1,6 +1,6 @@
 #app{
   display: grid;
-  grid-template-columns: 36% 64%;
+  grid-template-columns: 24.1% 75.8%;
 
   height: 100vh;
   overflow: hidden; /*Isso faz com que ele não tenha rolagem nos dois lados, no entanto resolucionaremos isso na tag main colocando rolagem diretamente nela*/
@@ -17,7 +17,7 @@ aside{
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(/assets/Background.png);
-  border: 1px solid red;
+ 
 }
 
 #app {
@@ -45,6 +45,10 @@ aside{
       }
     } 
     
+
+  }
+
+  main{
 
   }
 }

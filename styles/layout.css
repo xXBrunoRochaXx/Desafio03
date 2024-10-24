@@ -1,6 +1,6 @@
 #app{
   display: grid;
-  grid-template-columns: 24.1% 75.8%;
+  grid-template-columns: 32% 68%;
 
   height: 100vh;
   overflow: hidden; /*Isso faz com que ele não tenha rolagem nos dois lados, no entanto resolucionaremos isso na tag main colocando rolagem diretamente nela*/
@@ -8,47 +8,88 @@
 
 main{
   overflow: auto;/*Aqui eu adiciono a rolagem */
+  background-color: var(--shape-background);
 
-  
 }
 
 aside{
-  padding: 2rem;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(/assets/Background.png);
- 
+  /* padding: 2rem; */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center center; */
+  background-color: var(--shape-background);
+  /* position: relative; */
+ /* border: 1px solid red; */
 }
 
 #app {
+
   aside{
 
-
     .aside-container{
+      position: relative;
+      img:nth-child(1){
+        position: absolute;
+        width: 100%;
+        height: auto;
+        /* left: 12.5%; */
+        border-radius: .5rem;
 
-      img{
-        height: 3rem;
+      }
+
+      img:nth-child(2){
         width: 2.5rem;
-        padding-left: 0.3rem;
-        margin-bottom: 1rem;
+        transform: translate(4.2rem, 1.3rem);
+  
+
       }
 
-      h2{
-        font: var(--logo);
-        color: var(--pink);
+      .front{
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        transform: translate(15%, 50%);
+        
+        h2{
+          font: var(--logo);
+          color: var(--pink);
+          display: block;
+        
+        }
+  
+        p{
+          font: var(--body-Xs-regular);
+          color: var(--text-heading);
+          margin-top: 0.25rem;
+        }
+
       }
 
-      p{
-        font: var(--body-Xs-regular);
-        color: var(--text-heading);
-        margin-top: 0.25rem;
-      }
-    } 
-    
+    }     
 
   }
 
   main{
+    padding: 5rem 8.12rem 0;
+
+    .main-container{
+      h1{
+        color: var(--text-heading);
+        margin-bottom: 2.5rem;
+      }
+
+      h3{
+        color: var(--text-heading);
+       
+      }
+
+      .evento{
+        display: flex;
+        gap: 1.3rem;
+        margin-bottom: 1.5rem;
+        align-items: center;
+      }
+    }
 
   }
 }

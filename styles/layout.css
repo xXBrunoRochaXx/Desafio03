@@ -12,62 +12,59 @@ main{
 
 }
 
+body {
+  background-color: var(--shape-background);
+}
+
 aside{
-  /* padding: 2rem; */
+  
   /* background-size: contain; */
   /* background-repeat: no-repeat; */
   /* background-position: center center; */
-  background-color: var(--shape-background);
+ 
   /* position: relative; */
  /* border: 1px solid red; */
+
+  
 }
 
 #app {
-
   aside{
+    margin: 1.25rem;
+    border: 1px red solid;
+    background-color: var(--shape-background);
+    
+    
 
     .aside-container{
-      position: relative;
-      img:nth-child(1){
-        position: absolute;
-        width: 100%;
-        height: auto;
-        /* left: 12.5%; */
-        border-radius: .5rem;
-
+      border: 1px solid blue;
+      margin:  2rem;
+      
+      img{
+        /* padding-top: 1rem; */
+        width: 3rem;
+        height: 3rem;
       }
-
-      img:nth-child(2){
-        width: 2.5rem;
-        transform: translate(4.2rem, 1.3rem);
-  
-
-      }
-
-      .front{
-        top: 50%;
-        left: 50%;
-        z-index: 1;
-        transform: translate(15%, 50%);
-        
+      
+      
+      .front{ 
+        margin-top: 1rem;
         h2{
           font: var(--logo);
           color: var(--pink);
-          display: block;
-        
+         
         }
-  
+
         p{
           font: var(--body-Xs-regular);
           color: var(--text-heading);
           margin-top: 0.25rem;
         }
-
       }
 
-    }     
-
+    }
   }
+  
 
   main{
     padding: 5rem 8.12rem 0;

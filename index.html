@@ -13,18 +13,9 @@
 <body>
   <div id="app">
     <aside>
-      <!-- <img class="background" src="assets/Background.png" alt=""> -->
+      
 
       <div class="aside-container">
-        <!-- <img src="assets/Background.png" alt="">
-        
-        <img src="assets/Logo.svg" alt="Icone de confetes do aniversario ">
-        <div class="front">
-          <div class="div">
-            <h2>Festivite</h2>
-          </div>
-          <p>Crie um convite digital para o seu evento</p>
-        </div> -->
         
         <img src="assets/Logo.svg" alt="Icone de confetes do aniversario ">
 
@@ -37,7 +28,7 @@
       </div>
     </aside>
 
-    <!-- <main>  
+     <main>  
       <div class="main-container">
         <h1>Crie seu convite</h1>
 
@@ -51,24 +42,34 @@
         <form >
           <label for="title">Titulo</label>
           <input type="text" placeholder="Nome do evento" id="title">
+
           <div class="cols-2">
             <label for="init">Início</label>
-            <input type="text" name="init" placeholder="DD/MM/AAA" id="init">
-
             <label for="end">Fim</label>
+            
+            <input type="text" name="init" placeholder="DD/MM/AAA" id="init">
             <input type="text" id="end" placeholder="DD/MM/AAA">
-
-            <br>
+            
             <label for="type">Tipo</label>
-            <button>Presencial</button>
-            <button>Online</button>
-            
-            
             <label for="location">local</label>
+            
+            <div class="button">
+              <label class="custom-radio">
+                <input type="radio" name="opcao" value="presencial">
+                Presencial
+              </label>
+
+              <label class="custom-radio">
+                <input type="radio" name="opcao" value="Online">
+                Online
+              </label>             
+            </div>
+
             <input type="text" id="location" placeholder="Link ou endereço">
 
             
           </div>
+          
           <label for="description">Descrição</label>:
           <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
         </form>
@@ -76,7 +77,7 @@
         </div>
 
       </div>
-    </main> -->
+    </main> 
   </div>
 </body>
 </html> 

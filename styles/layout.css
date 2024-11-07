@@ -8,7 +8,7 @@
 
 main{
   overflow: auto;/*Aqui eu adiciono a rolagem */
-  
+  background-color: var(--shape-body);
 
 }
 
@@ -56,12 +56,20 @@ body {
   
 
   main{
+    border: 1px red solid;
     padding: 5rem 8.12rem 0;
-
+    margin: 1.25rem;
+    margin-left: 0;
+    border-radius: .5rem;
+   
     .main-container{
+      border: 1px solid blue;
+      
+      /* text-align: center; */
       h1{
         color: var(--text-heading);
         margin-bottom: 2.5rem;
+        font: var(--headig-Md);
       }
 
       h3{
@@ -74,7 +82,115 @@ body {
         gap: 1.3rem;
         margin-bottom: 1.5rem;
         align-items: center;
+        
+        h3{
+          font: var(--heading-Sm);
+        }
       }
+
+      form{
+       textarea{
+        background-color: var(--input-base);
+        border: 1px solid var(--input-stroke);
+        border-radius: .5rem;
+       }
+       textarea::placeholder{
+        color: var(--input-placeholder);
+       }
+
+        input{
+          background-color: var(--input-base);
+          border: 1px solid var(--input-stroke);
+          border-radius: .5rem;
+        }
+        input::placeholder{
+          color: var(--input-placeholder);
+        }
+
+        label{
+          color: var(--text-body);
+        }
+        
+        textarea{
+          color: var(--text-body);
+        }
+
+        
+        .cols-2{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto auto;
+          gap: 1rem;
+          #end{
+            height: 3rem;
+          }
+          
+          .button{
+            border-radius: .5rem;
+            border: 1px solid var(--input-stroke);
+            background-color: var(--input-base);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 3rem;
+    
+            .custom-radio input[type="radio"]{
+              display: none;
+            }
+            
+            .custom-radio {
+              cursor: pointer;
+              padding: 10px;
+              border: 1px solid #0835b1;
+              border-radius: .5rem;
+             
+            }
+    
+            .custom-radio input[type="radio"]:checked + label,
+            .custom-radio input[type="radio"]:checked{
+               background-color: #f50ea8;
+               color: rgba(12, 79, 223, 0.486);
+               border-color: #4a90e2;
+            }
+          }
+    
+
+        }
+        .cols-2 > label{
+          display: block;
+        }
+
+      } 
+
+      form > label{
+        display: block;
+        
+      }
+
+      form > input, textarea{
+        /* width: 31.25rem; */
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      form > input{
+        height: 3rem;
+      }
+      
+      form > textarea{
+        height: 8.5rem;
+        
+      }
+      
+     
+    
+
+      
+
+     
+
+     
+
     }
 
   }

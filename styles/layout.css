@@ -141,16 +141,19 @@ body {
             .custom-radio {
               cursor: pointer;
               padding: 10px;
-              border: 1px solid #0835b1;
+              /* border: 1px solid #0835b1; */
               border-radius: .5rem;
-             
+              transition: background-color 0.3s, color 0.3s;
             }
     
-            .custom-radio input[type="radio"]:checked + label,
-            .custom-radio input[type="radio"]:checked{
-               background-color: #f50ea8;
-               color: rgba(12, 79, 223, 0.486);
+            .custom-radio input[type="radio"]:checked + span{
+               background-color: var(--shape-button);
+               color: var(--text-heading);
                border-color: #4a90e2;
+               font: var( --body-Sm-semibold);
+               padding: .6rem;
+               border-radius: .5rem;
+               /* padding-left: 2rem; */
             }
           }
     

@@ -63,7 +63,7 @@ body {
     border-radius: .5rem;
    
     .main-container{
-      border: 1px solid blue;
+      /* border: 1px solid blue; */
       
       /* text-align: center; */
       h1{
@@ -125,44 +125,49 @@ body {
             height: 3rem;
           }
           
-          .button{
+          .button {
             border-radius: .5rem;
-            border: 1px solid var(--input-stroke);
-            background-color: var(--input-base);
+            border: 1px solid var(--input-stroke, #ccc);
+            background-color: var(--input-base, #f9f9f9);
             display: flex;
             align-items: center;
             justify-content: space-evenly;
             height: 3rem;
-    
-            .custom-radio input[type="radio"]{
-              display: none;
-            }
-            
-            .custom-radio {
-              cursor: pointer;
-              padding: 10px;
-              /* border: 1px solid #0835b1; */
-              border-radius: .5rem;
-              transition: background-color 0.3s, color 0.3s;
-            }
-    
-            .custom-radio input[type="radio"]:checked + span{
-               background-color: var(--shape-button);
-               color: var(--text-heading);
-               border-color: #4a90e2;
-               font: var( --body-Sm-semibold);
-               padding: .6rem;
-               border-radius: .5rem;
-               /* padding-left: 2rem; */
-            }
-          }
-    
+            padding: 5px;
+            gap: 10px;
+        }
 
+        /* Esconde o botão de rádio */
+        .custom-radio input[type="radio"] {
+            display: none;
+        }
+
+        /* Estilo padrão para as labels */
+        .custom-radio {
+            cursor: pointer;
+            border-radius: .5rem;
+            transition: background-color 0.3s, color 0.3s;
+            text-align: center;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+
+        /* Estilo da opção selecionada com preenchimento completo */
+        .custom-radio input[type="radio"]:checked + span {
+            background-color: var(--shape-button, #4CAF50); /* Cor de fundo ao selecionar */
+            color: var(--text-heading, #fff); /* Cor do texto ao selecionar */
+            border: 1px solid #4a90e2; /* Cor da borda ao selecionar */
+            font-weight: bold;
+            padding: 10px 20px; /* Padding fixo para manter tamanho */
+            border-radius: .5rem;
+            display: inline-block;
+        }
+
+  
         }
         .cols-2 > label{
           display: block;
         }
-
       } 
 
       form > label{
@@ -171,7 +176,6 @@ body {
       }
 
       form > input, textarea{
-        /* width: 31.25rem; */
         width: 100%;
         margin-bottom: 1rem;
       }
@@ -181,20 +185,8 @@ body {
       }
       
       form > textarea{
-        height: 8.5rem;
-        
-      }
-      
-     
-    
-
-      
-
-     
-
-     
-
+        height: 8.5rem;      
+      } 
     }
-
   }
 }

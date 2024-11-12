@@ -131,17 +131,23 @@ body {
             background-color: var(--input-base, #f9f9f9);
             display: flex;
             align-items: center;
-            justify-content: space-evenly;
+            /* justify-content: space-evenly; */
             height: 3rem;
             padding: 5px;
             gap: 10px;
         }
 
+        .icon img{
+          height: 1.2rem;
+          width: 1.2rem;
+          gap: .25rem;
+        }
+        
         /* Esconde o botão de rádio */
         .custom-radio input[type="radio"] {
             display: none;
         }
-
+        
         /* Estilo padrão para as labels */
         .custom-radio {
             cursor: pointer;
@@ -149,19 +155,30 @@ body {
             transition: background-color 0.3s, color 0.3s;
             text-align: center;
             display: inline-block;
-            padding: 10px 20px;
+            align-items: center;
+            img{
+              height: 1.2rem;
+              width: 1.2rem;
+              gap: .25rem;
+            }
         }
 
+        .custom-radio span {
+          padding: 8px 20px; /* Padding fixo */
+          display: flex;
+          border-radius: .5rem;
+          text-align: center;
+          align-items: center;
+          gap: .2rem;
+      }
+        
         /* Estilo da opção selecionada com preenchimento completo */
         .custom-radio input[type="radio"]:checked + span {
             background-color: var(--shape-button, #4CAF50); /* Cor de fundo ao selecionar */
             color: var(--text-heading, #fff); /* Cor do texto ao selecionar */
-            border: 1px solid #4a90e2; /* Cor da borda ao selecionar */
-            font-weight: bold;
-            padding: 10px 20px; /* Padding fixo para manter tamanho */
-            border-radius: .5rem;
-            display: inline-block;
+           
         }
+        
 
   
         }

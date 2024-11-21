@@ -361,7 +361,7 @@ body {
 
       .cover button {
         padding: 5px 10px;
-        background-color: #6A5ACD;
+        background-color:var(--shape-button);
         color: white;
         border: none;
         border-radius: 5px;
@@ -421,6 +421,212 @@ body {
         transform: translateX(14px);
       }
     }
+
+   
+  
+   
+    /* Container principal */
+.contact-data {
+  
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+
+  .form-group{
+    border: none;
   }
-  }
+
+}
+
+/* Estilo do título do grupo */
+.form-group legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+.form-group .icon {
+  font-size: 1.5rem;
+  color: #FF4081;
+}
+
+/* Campos do formulário */
+.form-field {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: var(--input-base);
+  color: #fff;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  /* border-color: #4CAF50; */
+}
+
+/* Erro */
+.error-message {
+  font-size: 0.8rem;
+  color: #FF4081;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 2px;
+}
+
+input:invalid ~ .error-message {
+  display: block;
+}
+
+/* Estilo para linha de campos */
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .form-field {
+  flex: 1;
+}
+
+  /* Configuração básica */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e2f;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #292938;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Linha divisória */
+.divider {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 20px 0;
+}
+
+/* Estilização das caixas de seleção */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.checkbox-container input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: transparent;
+  position: relative;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.checkbox-container input[type="checkbox"]:checked + .checkbox-custom {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.checkbox-container input[type="checkbox"]:checked + .checkbox-custom::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  width: 6px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Links */
+.checkbox-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.checkbox-container a:hover {
+  text-decoration: underline;
+}
+
+/* Botão */
+.btn-gerar-convite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.btn-gerar-convite span {
+  margin-right: 8px;
+}
+
+.btn-gerar-convite:hover {
+  background-color: #0056b3;
+}
+
+.btn-gerar-convite:active {
+  transform: scale(0.98);
+}
+
+
+}
+
+}
 }
